@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Faro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body id="top">
+
+<!-- CABECERA -->
+<header class="has-background-link-light has-text-centered py-4">
+  <h1 class="title is-2">El Faro</h1>
+  <img src="logo.png" alt="Logotipo de El Faro" width="100">
+  <div id="fecha-hora" class="is-size-6 has-text-grey"></div>
+</header>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar is-link" role="navigation">
+  <div class="container">
+    <div class="navbar-menu is-flex is-justify-content-center is-align-items-center">
+      <a class="navbar-item has-text-white has-text-weight-semibold" href="index.html">
+        ← Volver al menú principal
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- SECCIÓN PRINCIPAL -->
+<section class="section">
+  <div class="container">
+    <div class="has-text-centered mb-5">
+      <h2 class="title is-3">NOTICIAS DE NEGOCIOS</h2>
+    </div>
+
+    <div class="columns is-variable is-8">
+      <!-- IZQUIERDA: Noticias Generales -->
+      <div class="column is-one-quarter seccion-lateral" id="lateral-izq">
+        <div class="articulo-lateral">
+          <h4>Protesta de pescadores en Valparaíso</h4>
+          <figure class="image is-4by3"><img src="img/protesta.jpg" alt="Protesta"></figure>
+          <p class="is-size-7">
+            Cientos de pescadores bloquearon accesos en Valparaíso exigiendo subsidios y mejoras laborales tras meses de baja actividad.
+          </p>
+        </div>
+        <div class="articulo-lateral">
+          <h4>Incendio forestal arrasa 50 hectáreas</h4>
+          <figure class="image is-4by3"><img src="img/incendio.jpg" alt="Incendio"></figure>
+          <p class="is-size-7">
+            Un voraz incendio en la zona rural de Casablanca fue contenido tras arduo trabajo de bomberos y apoyo aéreo.
+          </p>
+        </div>
+        <div class="articulo-lateral">
+          <h4>Choque múltiple en Coquimbo</h4>
+          <figure class="image is-4by3"><img src="img/choque.jpg" alt="Choque"></figure>
+          <p class="is-size-7">
+            Cuatro buses interurbanos colisionaron en la Ruta 5 Norte, dejando al menos 15 heridos y congestión por horas.
+          </p>
+        </div>
+      </div>
+
+      <!-- CENTRO: Noticias de Negocios -->
+      <div class="column is-half" id="contenedor-negocios">
+        <article class="box">
+          <h4 class="title is-5">Startup chilena crea app para reciclaje</h4>
+          <figure class="image is-4by3"><img src="img/startup.jpg" alt="Startup"></figure>
+          <p class="mt-2">
+            En un contexto donde la conciencia ambiental se vuelve cada vez más urgente, una startup chilena ha decidido liderar el cambio. Se trata de EcoSmart, una innovadora empresa tecnológica que ha lanzado una aplicación móvil con un enfoque educativo y motivacional para incentivar el reciclaje en hogares urbanos y rurales. Esta plataforma no solo educa sobre cómo separar residuos correctamente, sino que además premia con puntos acumulables que pueden ser canjeados por beneficios en comercio local, servicios de transporte e incluso descuentos en cuentas de servicios básicos.
+          </p>
+          <p class="mt-2">
+            La aplicación, que ya supera las 50.000 descargas, utiliza inteligencia artificial para reconocer materiales reciclables a través de la cámara del celular y sugiere el contenedor adecuado para cada uno. Los usuarios pueden registrar su reciclaje diario y ver el impacto ambiental que generan en tiempo real, como kilos de plástico recuperado o litros de agua ahorrados. Además, la app establece rankings comunitarios por barrio y comuna, promoviendo la competencia saludable entre vecinos.
+          </p>
+          <p class="mt-2">
+            EcoSmart ha firmado convenios con más de 20 municipios a lo largo del país y cuenta con el respaldo de fondos de innovación de CORFO. Gracias a estas alianzas, las comunas participantes reciben reportes mensuales sobre el comportamiento ambiental de sus habitantes, lo que permite tomar decisiones más informadas respecto a infraestructura verde, rutas de recolección diferenciada y campañas educativas focalizadas.
+          </p>
+          <p class="mt-2">
+            Daniela Lagos, CEO de EcoSmart, señala: “Nuestro objetivo es demostrar que la tecnología puede ser una herramienta poderosa para empoderar ciudadanos y cambiar el modelo lineal de consumo. Queremos hacer del reciclaje una actividad cotidiana, gratificante y altamente visible”. Además, la empresa ha implementado un sistema de insignias que reconoce a los usuarios más activos, desde ‘Reciclador principiante’ hasta ‘Embajador ecológico’.
+          </p>
+          <p class="has-text-grey-light is-size-7 mt-2">20 de abril de 2025</p>
+        </article>
+      
+        <article class="box">
+          <h4 class="title is-5">Café de barrio aumenta ventas con delivery</h4>
+          <figure class="image is-4by3"><img src="img/cafeteria.jpg" alt="Café"></figure>
+          <p class="mt-2">
+            El tradicional “Café Esquina”, ubicado en un tranquilo sector de Ñuñoa, logró reinventarse en medio de las adversidades económicas mediante una estrategia tan simple como eficaz: el uso de WhatsApp como canal oficial de pedidos. Esta iniciativa, impulsada por sus propios dueños, permitió duplicar las ventas en menos de dos meses y posicionar el café como un ejemplo de innovación barrial en el uso de herramientas digitales.
+          </p>
+          <p class="mt-2">
+            A través de un catálogo interactivo enviado por chat, los clientes podían seleccionar entre una amplia variedad de cafés, repostería artesanal y opciones veganas, personalizar sus pedidos e incluso agendar horarios de entrega. El sistema, que inicialmente fue manual, evolucionó con el tiempo a un bot automatizado que responde consultas, confirma pedidos y mantiene informados a los clientes sobre promociones y productos nuevos.
+          </p>
+          <p class="mt-2">
+            Además, el café implementó un sistema de fidelización virtual: por cada cinco pedidos realizados, el cliente obtiene un café gratuito, generando un sentido de pertenencia y continuidad que atrajo no solo a residentes del barrio, sino también a oficinistas, estudiantes y turistas. “No teníamos presupuesto para invertir en una app profesional, así que aprovechamos lo que teníamos al alcance. Y resultó ser todo un éxito”, comenta Laura Morales, dueña del café.
+          </p>
+          <p class="mt-2">
+            El impacto fue tal que la Municipalidad de Santiago premió al establecimiento con un reconocimiento a la resiliencia comercial y lo incluyó en campañas de promoción para pequeños emprendimientos. Actualmente, el local planea expandir su estrategia a través de TikTok, con videos de recetas caseras, entrevistas a clientes fieles y un estilo comunicacional cercano que busca conectar emocionalmente con la comunidad.
+          </p>
+          <p class="has-text-grey-light is-size-7 mt-2">20 de abril de 2025</p>
+        </article>
+      
+        <article class="box">
+          <h4 class="title is-5">Criptomonedas se estabilizan en Chile</h4>
+          <figure class="image is-4by3"><img src="img/criptomonedas.jpg" alt="Cripto"></figure>
+          <p class="mt-2">
+            Tras una temporada marcada por la volatilidad, las criptomonedas en Chile han comenzado a mostrar signos de estabilización. Según datos entregados por la Asociación de Fintech de Chile, el volumen de transacciones en plataformas digitales se ha estabilizado durante el primer trimestre de 2025, marcando una recuperación sostenida que ha devuelto la confianza a inversores individuales y fondos de inversión.
+          </p>
+          <p class="mt-2">
+            Esta nueva etapa de consolidación se ve reforzada por el reciente anuncio de la Comisión para el Mercado Financiero (CMF), que evalúa establecer una legislación integral para regular exchanges, custodios de activos y sistemas de pagos cripto en el país. La normativa buscaría mitigar riesgos de lavado de dinero, proteger a los usuarios de estafas, y brindar claridad tributaria sobre ganancias de capital obtenidas por operaciones con monedas digitales.
+          </p>
+          <p class="mt-2">
+            Los exchanges más importantes del país han reaccionado favorablemente a la noticia, colaborando activamente con la CMF para definir estándares operativos mínimos. En paralelo, bancos privados han iniciado mesas de trabajo para explorar productos financieros vinculados a criptomonedas, tales como fondos mutuos con exposición a activos digitales o cuentas de ahorro en stablecoins.
+          </p>
+          <p class="mt-2">
+            Desde el ámbito académico, universidades como la Pontificia Universidad Católica y la Universidad de Chile han lanzado diplomados en tecnología blockchain, con foco en aplicaciones legales, contables y de trazabilidad. Estas iniciativas buscan preparar a nuevos profesionales para un entorno económico más descentralizado, pero no por ello menos estructurado.
+          </p>
+          <p class="mt-2">
+            Aunque el futuro de las criptomonedas sigue siendo incierto a nivel global, en Chile se observa una tendencia hacia la madurez del ecosistema, con mayor participación institucional, desarrollo de talento especializado y mayor conciencia ciudadana sobre los riesgos y oportunidades de este tipo de activos. Todo indica que las criptomonedas llegaron para quedarse, pero esta vez bajo una mirada más regulada, transparente y profesionalizada.
+          </p>
+          <p class="has-text-grey-light is-size-7 mt-2">20 de abril de 2025</p>
+        </article>
+      </div>
+      
+
+      <!-- DERECHA: Noticias Deportivas -->
+      <div class="column is-one-quarter seccion-lateral" id="lateral-der">
+        <div class="articulo-lateral">
+          <h4>Tabilo avanza a semifinales</h4>
+          <figure class="image is-4by3"><img src="img/tabilo.jpg" alt="Tabilo"></figure>
+          <p class="is-size-7">Alejandro Tabilo venció con claridad al argentino Sebastián Báez, accediendo por primera vez a semifinales en el ATP de Santiago, tras una sólida actuación frente a su público.</p>
+        </div>
+      
+        <div class="articulo-lateral">
+          <h4>Garín elimina a top 20</h4>
+          <figure class="image is-4by3"><img src="img/garin.jpg" alt="Garín"></figure>
+          <p class="is-size-7">Cristian Garín sorprendió al derrotar al italiano Lorenzo Musetti, número 19 del mundo, en el ATP 500 de Barcelona, mostrando un juego sólido y estratégico durante todo el encuentro.</p>
+        </div>
+      
+        <div class="articulo-lateral">
+          <h4>Jarry se retira por lesión</h4>
+          <figure class="image is-4by3"><img src="img/jarry.jpg" alt="Jarry"></figure>
+          <p class="is-size-7">Nicolás Jarry abandonó el torneo en Barcelona por molestias en el hombro derecho. El tenista nacional priorizó su recuperación para no comprometer su participación en los próximos torneos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="has-text-centered mt-5">
+    <a class="button is-link is-light" href="#top">Volver al inicio</a>
+  </div>
+
+<!-- FOOTER -->
+<footer class="footer has-background-grey-lighter">
+  <div class="content has-text-centered">
+    <p><strong>El Faro</strong> - &copy; 2025 Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
